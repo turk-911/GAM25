@@ -38,7 +38,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
-      background-color: #f9f9f9;
+      /* background-color: #f9f9f9; */
       transition: transform 0.3s ease;
     }
 
@@ -53,7 +53,7 @@
       font-size: 16px;
       font-weight: bold;
       color: #333;
-      background-color: #fff;
+      /* background-color: #fff; */
       margin: 0;
       border-top: 1px solid #eee;
     }
@@ -98,7 +98,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
-      background-color: #f9f9f9;
+      /* background-color: #f9f9f9; */
       transition: transform 0.3s ease;
     }
 
@@ -118,7 +118,7 @@
       font-size: 16px;
       font-weight: bold;
       color: #333;
-      background-color: #fff;
+      /* background-color: #fff; */
       margin: 0;
       border-top: 1px solid #eee;
     }
@@ -135,77 +135,97 @@
         /* Remove zigzag effect on small screens */
       }
     }
+
     html {
       scroll-behavior: smooth;
     }
+
     .logowrap img {
-			width: 120px;
-			/* Adjust the width as needed */
-			height: 120px;
-			/* Maintain the aspect ratio */
+      width: 120px;
+      /* Adjust the width as needed */
+      height: 120px;
+      /* Maintain the aspect ratio */
       margin-left: 25px;
-		}
+    }
+
     .carousel-nav-icon {
-    height: 250px;
-    width: 250px;
-    background-size: cover;
-    background-position: center center;
-    
-}
+      height: 250px;
+      width: 250px;
+      background-size: cover;
+      background-position: center center;
 
-.carousel-item .col, .carousel-item .col-sm, .carousel-item .col-md {
-    margin: 8px;
-    height: 300px;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    }
 
-.carousel .caption {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
-}
-.carousel-arrow {
-    width: 50px; /* Adjust width as needed */
-    height: 50px; /* Adjust height as needed */
-    fill: teal; /* Adjust fill color as needed */
-}
+    .carousel-item .col,
+    .carousel-item .col-sm,
+    .carousel-item .col-md {
+      margin: 8px;
+      height: 300px;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.carousel-nav-icon svg {
-  margin-top: 70px;
-    width: 50px;
-    height: 50px;
-    color: teal;
-}
-.photo-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center items horizontally */
-}
+    .carousel .caption {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #333;
 
-.photo-container img {
-    width: 20%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Add margin between images */
-}
-.photo img {
-  
-  margin-right: 50px;
-    width: 100%; /* Ensures the image fills its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Removes any extra space below the image */
-    border-radius: 5px; /* Optional: Adds rounded corners */
-}
-.photo .name {
-    margin-top: 5px;
-    font-size: 14px;
-    margin-right: 40px;
-}
+      text-align: center;
+    }
 
+    .carousel-arrow {
+      width: 50px;
+      /* Adjust width as needed */
+      height: 50px;
+      /* Adjust height as needed */
+      fill: teal;
+      /* Adjust fill color as needed */
+    }
 
+    .carousel-nav-icon svg {
+      margin-top: 70px;
+      width: 50px;
+      height: 50px;
+      color: teal;
+    }
+
+    .photo-container {
+      display: flex;
+      /* Use flexbox for layout */
+      justify-content: center;
+      /* Center items horizontally */
+    }
+
+    .photo-container img {
+      width: 20%;
+      /* Adjust the width as needed */
+      height: auto;
+      /* Maintain aspect ratio */
+      margin: 0 10px;
+      /* Add margin between images */
+    }
+
+    .photo img {
+
+      margin-right: 50px;
+      width: 100%;
+      /* Ensures the image fills its container */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Removes any extra space below the image */
+      border-radius: 5px;
+      /* Optional: Adds rounded corners */
+    }
+
+    .photo .name {
+      margin-top: 5px;
+      font-size: 14px;
+      margin-right: 40px;
+    }
   </style>
 
   <!-- bootstrap core css -->
@@ -229,21 +249,20 @@
 </head>
 
 <body>
-  
+
   <div class="hero_area">
-    <div class="hero_bg_box">
+    <!-- <div class="hero_bg_box">
       <img src="images/sitelogo.jpg" alt="">
-    </div>
+    </div> -->
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" style="background-color:teal;">
 
       <div class="header_bottom">
         <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <div style="margin-left: -40px;"class="logowrap" itemprop="logo">
-						<img src="images/sitelogo.jpg" alt="Logo Image">
-						
-					</div>
+          <nav class="navbar navbar-expand-lg custom_nav-container " >
+            <div style="margin-left: -40px; margin-right: 40px; background-color:white;" class="logowrap" itemprop="logo">
+              <img src="images/sitelogo.jpg" alt="Logo Image">
+            </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -261,9 +280,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#about"> About</a>
                 </li>
-		      <li class="nav-item">
-                  <a class="nav-link" href="https://alumnimeet.iiita.ac.in/industry-academia/Possible%20types%20of%20Collaborations_MOUs%20between%20Industries%20and%20IIITA.pdf" target="_blank">Collaborations</a>
-		</li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="https://alumnimeet.iiita.ac.in/industry-academia/Possible%20types%20of%20Collaborations_MOUs%20between%20Industries%20and%20IIITA.pdf"
+                    target="_blank">Collaborations</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#speakers">Speakers</a>
                 </li>
@@ -273,7 +294,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#organisers">Organising Committee</a>
                 </li>
-                
+
               </ul>
             </div>
           </nav>
@@ -290,8 +311,8 @@
               <div class="row">
                 <div class="col-lg-10 col-md-11 mx-auto">
                   <section style="margin-left: 100px;">
-                    <h1 style=" text-align: center; color: white"><strong>Industry-Academia Conclave</strong> </h1>
-                    <h5 style=" text-align: center; color: white;"><strong>September 29th, 2024</strong> </h5>
+                    <h1 style=" text-align: center;"><strong>Industry-Academia Conclave</strong> </h1>
+                    <h5 style=" text-align: center;"><strong>September 29th, 2024</strong> </h5>
                     <div class="chief-guests">
 
                       <div class="guest-list">
@@ -302,21 +323,23 @@
                             Dr. Mukul Sutaone <br>
                             Director IIITA</p>
                         </div>
-			      <div class="guest">
+                        <div class="guest">
                           <img src="images/guest4.jpg" alt="Chief Guest 4">
                           <p class="name">Chairman - Org. Committee <br>
                             Prof. Anupam <br>
                             Dean (Alumni Affairs)</p>
                         </div>
                         <div class="guest">
-                          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Chief Guest 2">
+                          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                            alt="Chief Guest 2">
                           <p class="name">Under Construction</p>
                         </div>
                         <div class="guest">
-                          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Chief Guest 2">
+                          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                            alt="Chief Guest 2">
                           <p class="name">Under Construction</p>
                         </div>
-                        
+
                       </div>
                     </div>
                   </section>
@@ -331,13 +354,14 @@
                   <section style="margin-left: 80px;" class="speakers-section">
                     <div class="container">
                       <div class="heading-container heading-center">
-                        <h4 style=" text-align: center; color:white ; margin-bottom: 40px;"><strong>Alumni Speakers
+                        <h4 style=" text-align: center; margin-bottom: 40px;"><strong>Alumni Speakers
                             During Conclave</strong> </h4>
                       </div>
                       <div class="speakers-list">
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -345,7 +369,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -353,7 +378,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -361,7 +387,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -369,7 +396,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -377,7 +405,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -397,21 +426,14 @@
                   <section style="margin-left: 80px;" class="speakers-section">
                     <div class="container">
                       <div class="heading-container heading-center">
-                        <h4 style=" text-align: center; color:white ; margin-bottom: 40px;"><strong>Non-Alumni Speakers
+                        <h4 style=" text-align: center; margin-bottom: 40px;"><strong>Non-Alumni Speakers
                             During Conclave</strong> </h4>
                       </div>
                       <div class="speakers-list">
-                       <div class="speaker">
+                        <div class="speaker">
                           <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
-                          </div>
-                          <div class="detail-box">
-                            <p class="name">Under Construction</p>
-                          </div>
-                        </div>
-                       <div class="speaker">
-                          <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -419,7 +441,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -427,7 +450,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -435,7 +459,8 @@
                         </div>
                         <div class="speaker">
                           <div>
-                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
@@ -443,201 +468,240 @@
                         </div>
                         <div class="speaker">
                           <div>
-                             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" alt="Speaker 6" />
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
                           </div>
                           <div class="detail-box">
                             <p class="name">Under Construction</p>
                           </div>
                         </div>
-                       </div>
-			</div>
+                        <div class="speaker">
+                          <div>
+                            <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+                              alt="Speaker 6" />
+                          </div>
+                          <div class="detail-box">
+                            <p class="name">Under Construction</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </section>
+                </div>
+    </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="carousel_btn-box">
+    <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  </section>
+  <!-- end slider section -->
+  </div>
+  <div class="my-5 text-center container">
+    <div class="row mb-2">
+      <div class="col text-center">
+        <h2 style="margin-top: 70px;"><strong> Alumni Speakers During Conclave </strong></h2>
+        <p class="lead"><a target="_blank" href="https://codepen.io/davidbiek/pen/OJpQpza"></a></p>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-1 d-flex align-items-center justify-content-center">
+        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <div class="carousel-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="col-10">
+        <!--Start carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
+                </div>
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
+                </div>
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
+                </div>
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
+                </div>
+                <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                    class="carousel-nav-icon">
+                  </div>
+                  <div class="caption">Under Construction</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel_btn-box">
-          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
+
+        <!--End carousel-->
+      </div>
+      <div class="col-1 d-flex align-items-center justify-content-center"><a href="#carouselExampleIndicators"
+          data-slide="next">
+          <div class="carousel-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--NON ALUMNI SPEAKERS-->
+  <section>
+    <div class="my-5 text-center container">
+      <div class="row mb-2">
+        <div class="col text-center">
+          <h2 style="margin-top: 60px;"><strong> Non - Alumni Speakers During Conclave </strong></h2>
+          <p class="lead"><a target="_blank" href="https://codepen.io/davidbiek/pen/OJpQpza"></a></p>
         </div>
       </div>
-    </section>
-    <!-- end slider section -->
-  </div>
-  <div  class="my-5 text-center container">
-    <div class="row mb-2">
-       <div class="col text-center">
-          <h2 style="margin-top: 70px;" ><strong> Alumni Speakers During Conclave </strong></h2  >
-          <p class="lead"><a target="_blank" href="https://codepen.io/davidbiek/pen/OJpQpza"></a></p>
-       </div>
-    </div>
-    <div class="row d-flex align-items-center">
-       <div class="col-1 d-flex align-items-center justify-content-center">
-          <a href="#carouselExampleIndicators" role="button" data-slide="prev">
-             <div class="carousel-nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
-                </svg>
-             </div>
-          </a>
-       </div>
-       <div  class="col-10">
-          <!--Start carousel-->
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-          <!--End carousel-->
-       </div>
-       <div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselExampleIndicators" data-slide="next">
-          <div class="carousel-nav-icon">
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
-             </svg>
-          </div>
-          </a>
-       </div>
-    </div>
- </div>
- 
-<!--NON ALUMNI SPEAKERS-->
-<section>
-   <div  class="my-5 text-center container">
-    <div class="row mb-2">
-       <div class="col text-center">
-          <h2 style="margin-top: 60px;" ><strong> Non - Alumni Speakers During Conclave </strong></h2  >
-          <p class="lead"><a target="_blank" href="https://codepen.io/davidbiek/pen/OJpQpza"></a></p>
-       </div>
-    </div>
-    <div class="row d-flex align-items-center">
-       <div class="col-1 d-flex align-items-center justify-content-center">
+      <div class="row d-flex align-items-center">
+        <div class="col-1 d-flex align-items-center justify-content-center">
           <a href="#carouselAlumni" role="button" data-slide="prev">
-             <div class="carousel-nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
-                </svg>
-             </div>
+            <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+              </svg>
+            </div>
           </a>
-       </div>
-       <div  class="col-10">
+        </div>
+        <div class="col-10">
           <!--Start carousel-->
           <div id="carouselAlumni" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction3</div>
-                        </div>
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
-                        <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
-                            <div style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');" class="carousel-nav-icon">
-                            </div>
-                            <div class="caption">Under Construction</div>
-                        </div>
+                    <div class="caption">Under Construction</div>
+                  </div>
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
                     </div>
+                    <div class="caption">Under Construction</div>
+                  </div>
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
+                    </div>
+                    <div class="caption">Under Construction3</div>
+                  </div>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
+                    </div>
+                    <div class="caption">Under Construction</div>
+                  </div>
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
+                    </div>
+                    <div class="caption">Under Construction</div>
+                  </div>
+                  <div class="col-12 col-md d-flex flex-column align-items-center justify-content-center">
+                    <div
+                      style="background-image:url('images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp');"
+                      class="carousel-nav-icon">
+                    </div>
+                    <div class="caption">Under Construction</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        
-          <!--End carousel-->
-       </div>
-       <div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselAlumni" data-slide="next">
-          <div class="carousel-nav-icon">
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
-             </svg>
           </div>
+
+          <!--End carousel-->
+        </div>
+        <div class="col-1 d-flex align-items-center justify-content-center"><a href="#carouselAlumni" data-slide="next">
+            <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+              </svg>
+            </div>
           </a>
-       </div>
+        </div>
+      </div>
     </div>
- </div>
-</section>
+  </section>
 
   <!-- about section -->
 
-  <section  style="background-color: rgb(225, 221, 221);" id="about" style="margin-top: 100px;" class="about_section">
+  <section style="" id="about" style="margin-top: 100px;" class="about_section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 offset-md-1">
           <div style="margin-right:-500px; " class="detail-box pr-md-2">
             <div class="heading_container">
-              <h2 style="text-align: center; color: teal;"class=""><br>
+              <h2 style="text-align: center; color: teal;" class=""><br>
                 About The Industry Academia Conclave 2024
               </h2>
             </div>
-            <p class="detail_p_mt">
+            <p class="detail_p_mt" style="text-align: justify;">
               The Industry-Academia collaboration is beneficial for an Industry as well as an Institute with the shared
               human resource, Infrastructure, lab setup, equipment & facilities. The Industry can take help from an
               Institute for carrying out R&D and to solve any technical hurdles, and on the other hand the students &
@@ -656,10 +720,10 @@
               <br>
               <br>
             </p>
-           
+
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -667,27 +731,30 @@
     <div style="margin-top: 70px; text-align: center;">
       <h2 style="margin-bottom: 30px; color: 333;"><strong>Alumni Guest Of Honor</strong></h2>
       <div class="photo-container">
-          <div class="photo">
-              <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" style=" size:10px; width: 250px; height: auto;" >
-              <p class="name">Under Construction</p>
-          </div>
-          <div class="photo">
-              <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" style="width: 250px; height: auto;" >
-              <p class="name">Under Construction</p>
-          </div>
-          <div class="photo">
-              <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" style="width: 250px; height: auto;">
-              <p class="name">Under Construction</p>
-          </div>
+        <div class="photo">
+          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+            style=" size:10px; width: 250px; height: auto;">
+          <p class="name">Under Construction</p>
+        </div>
+        <div class="photo">
+          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+            style="width: 250px; height: auto;">
+          <p class="name">Under Construction</p>
+        </div>
+        <div class="photo">
+          <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp"
+            style="width: 250px; height: auto;">
+          <p class="name">Under Construction</p>
+        </div>
       </div>
-  </div>
-  
-</section>
+    </div>
+
+  </section>
   <!-- about section ends -->
 
 
   <!-- contact section -->
-<!--   <section id="speakers" class="contact_section ">
+  <!--   <section id="speakers" class="contact_section ">
     <div class="container-fluid">
       <h2 style="margin-top: 100px; text-align: center; color: rgb(21, 19, 19);">
       
@@ -695,19 +762,19 @@
       </h2>
       <br>
       <!-- first-->
-<!--       <div class="row">
+  <!--       <div class="row">
         <div class="col-md-6 px-0">
           <div class="img-box " style="margin-left: 250px; margin-right: 100px;">
             <img src="images/default-avatar-profile-icon-grey-photo-placeholder-vector-17317730.webp" class="box_img" alt="about img" height="250 px" width="100px">
             <p style="margin-top: 10px;">
-            <h6>Under Construction</h6> --> 
-<!--             Director/Co-founder
+            <h6>Under Construction</h6> -->
+  <!--             Director/Co-founder
             Prosperme Consulting Pvt Ltd
             <p>Website:<a href="www.prosperme.in">www.prosperme.in</a></p>
             </p> -->
-<!--           </div>
+  <!--           </div>
         </div> -->
-<!--         <div class="col-md-5 mx-auto">
+  <!--         <div class="col-md-5 mx-auto">
           <div class="form_container">
             <div class="heading_container heading_center">
               <h2 style="color: #a9a1a1;">Brief Bio-Data</h2>
@@ -725,7 +792,7 @@
       </div>
       <hr>
       <!-- second -->
-<!--       <div class="row">
+  <!--       <div class="row">
         <div class="col-md-5 mx-auto">
           <div class="form_container">
             <div class="heading_container heading_center">
@@ -744,7 +811,7 @@
             </div>
           </div>
         </div> -->
-<!--         <div class="col-md-6 px-0">
+  <!--         <div class="col-md-6 px-0">
           <div class="img-box " style="margin-left: 250px; margin-right: 100px;">
             <img src="images/briefbiodata2.jpg" class="box_img" alt="about img" height="250 px" width="100px">
             <p style="margin-top: 10px;">
@@ -756,9 +823,9 @@
           </div>
         </div>
       </div> -->
-<!--       <hr> -->
-      <!-- third-->
-<!--       <div class="row">
+  <!--       <hr> -->
+  <!-- third-->
+  <!--       <div class="row">
         <div class="col-md-6 px-0">
           <div class="img-box " style="margin-left: 250px; margin-right: 100px;">
             <img src="images/briefbiodata3.jpg" class="box_img" alt="about img" height="250 px" width="100px">
@@ -783,11 +850,11 @@
                 infrastructure projects. Set up polytechnic institutions for engineering, pharmacy and management.</p>
             </div>
           </div> -->
-<!--         </div>
+  <!--         </div>
       </div>
       <hr>
       <!--fourth-->
-<!--       <div class="row">
+  <!--       <div class="row">
         <div class="col-md-5 mx-auto">
           <div class="form_container">
             <div class="heading_container heading_center">
@@ -801,8 +868,8 @@
                 for more than 30 patents and applications filed in US.</p>
             </div>
           </div> --> -->
-<!--         </div> -->
-<!--         <div class="col-md-6 px-0">
+  <!--         </div> -->
+  <!--         <div class="col-md-6 px-0">
           <div class="img-box " style="margin-left: 250px; margin-right: 100px;">
             <img src="images/briefbiodata4.jpg" class="box_img" alt="about img" height="250 px" width="100px">
             <p style="margin-top: 10px;">
@@ -814,16 +881,16 @@
             <p>Website:<a href="https://lexanalytico.com">https://lexanalytico.com</a></p>
             </p>
           </div> -->
-<!--         </div> -->
-<!--       </div>  -->
-<!--     </div>
+  <!--         </div> -->
+  <!--       </div>  -->
+  <!--     </div>
     <hr>
   </section> -->
-  
+
   <!--copy paste the syntax of first and second section alternatively according to the number of people needed to be introduced-->
   <!-- end contact section -->
 
-<!--   <section id="organisers" style="margin-top: 20px; margin-bottom: 60px;">
+  <!--   <section id="organisers" style="margin-top: 20px; margin-bottom: 60px;">
     <h2 style="margin-top: 40px; text-align: center; color: rgb(155, 79, 79);">
       <strong> Organising Committee</strong>
     </h2>
