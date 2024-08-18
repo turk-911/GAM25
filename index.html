@@ -1418,14 +1418,17 @@
 	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
 	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
-	<script>$(document).ready(function () {
+	<script>
+		$(document).ready(function () {
     $(".alumni-carousel").owlCarousel({
         loop: true,
         margin: 30,
         nav: true,
-        autoplay: true, 
-        autoplayTimeout: 3000, 
-        autoplayHoverPause: true, 
+        autoplay: true,          
+        autoplayTimeout: 3000,   
+        autoplaySpeed: 1000,     
+        autoplayHoverPause: true,
+        navSpeed: 1000,         
         responsive: {
             0: {
                 items: 1
@@ -1439,7 +1442,6 @@
         }
     });
 });
-
 
 	</script>
 	<script>
