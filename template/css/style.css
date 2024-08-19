@@ -1003,4 +1003,9 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+.carousel-control-prev, .carousel-control-next{
+  height:50vh;
+  position: absolute;
+  top:25vh;
+}
 /*# sourceMappingURL=style.css.map */
