@@ -8,6 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" href="path/to/owl.carousel.min.css">
+<link rel="stylesheet" href="path/to/owl.theme.default.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="path/to/owl.carousel.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -868,6 +872,24 @@
 		#page {
 			scroll-margin: 145px;
 		}
+
+		.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+/* Optional: Set a max-width for the carousel */
+
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    width: 100%;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
 	</style>
 </head>
 
@@ -1003,25 +1025,21 @@
 
 		<div style="display: flex;">
 		<div class="banner" style="margin-left:0; width:75%">
-			<div>
-			<div style="width: 100%; margin-top: 40px; height:450px; overflow-y:hidden" class="owl-four owl-carousel"
-				itemprop="image">
-				<img src="images/photu1.PNG" style="height: 450px;" alt="" class="img-responsive">
-				<img src="images/banner_new.jpeg" style="height: 450px;" alt="" class="img-responsive" />
-				<img src="https://www.iiita.ac.in/uploads/carousel/92768_o666.jpg" style="height: 450px;" alt=""
-					class="img-responsive" />
-				<img src="https://mba.iiita.ac.in/img/carousel-2.jpg" style="height: 450px;" alt=""
-					class="img-responsive" />
-			</div>
-			<div id="owl-four-nav" class="owl-nav"></div>
-			</div>
+			<div class="carousel" style="width: 100%;">
+        <div class="carousel-inner" style="width: 100%; margin-top: 40px; height:450px; ">
+			<img src="images/photu1.PNG" alt="" style="width: 100%;" >
+            <img src="images/banner_new.jpeg" alt="Image 2" >
+            <img src="https://www.iiita.ac.in/uploads/carousel/92768_o666.jpg" alt="Image 3" >
+        </div>
+    </div>
+
 		</div>
 		<div style="width:23%; margin-top:230px; margin-bottom:30px;">
 			<h1 style="font-size: 22px">Latest News</h1>
 			<marquee direction="up" style="height:90%; width:100%" onmouseover="this.stop()" onmouseout="this.start()" >
 				<div style="width:100%; border-bottom:2px solid black">
 					<h2 style="font-size: 20px; margin:0; padding:0;">Register Here</h2>
-					<p style="font-size: 16px;">Click the <b><a href="/GAM24/register.html">link</a></b> to Register Asap.</p>
+					<p style="font-size: 16px;">Click the <b><a href="./register.html">link</a></b> to Register Asap.</p>
 					<p style="font-size: 16px;">DeadLine: 25th August 2024</p>
 				</div>
 				<div style="width:100%; border-bottom:2px solid black">
@@ -1606,31 +1624,20 @@
 		});
 	</script>
 	<script>
-		$(document).ready(function () {
-			$(".alumni-carousel").owlCarousel({
-				loop: true,
-				margin: 30,
-				nav: true,
-				autoplay: true,
-				autoplayTimeout: 3000,
-				autoplaySpeed: 1000,
-				autoplayHoverPause: true,
-				navSpeed: 1000,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 2
-					},
-					1000: {
-						items: 3
-					}
-				}
-			});
-		});
-
-	</script>
+    $(document).ready(function() {
+        $(".owl-four").owlCarousel({
+            items: 1,                // Show one item at a time
+            loop: true,              // Enable infinite looping
+            autoplay: true,          // Enable automatic sliding
+            autoplayTimeout: 3000,   // Set the time between slides (3000ms = 3 seconds)
+            autoplayHoverPause: true, // Pause autoplay on hover
+            nav: true,               // Show navigation arrows
+            navContainer: '#owl-four-nav', // Set custom navigation container
+            dots: true               // Show pagination dots
+        });
+    });
+</script>
+<script src="automatic_slider.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			// Smooth scroll behavior for anchor links
