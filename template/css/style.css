@@ -783,9 +783,9 @@ a:focus {
   overflow: hidden;
 }
 
-.contact_section .img-box img {
+/* .contact_section .img-box img {
   min-width: 100%;
-}
+} */
 
 .client_section .client_container {
   display: -webkit-box;
