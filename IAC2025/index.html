@@ -16,7 +16,7 @@
   <style>
     .chief-guests {
       text-align: center;
-      padding: 20px;
+      padding: 15px;
     }
 
     .chief-guests h2 {
@@ -25,37 +25,39 @@
     }
 
     .guest-list {
-      display: flex;
-      justify-content: space-around;
+       display: flex;
+      justify-content: center;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
     .guest {
-      flex: 1;
-      max-width: 200px;
-      margin: 10px 20px;
-      /* Added horizontal margin for spacing */
+       background-color: #fff;
+      border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
       overflow: hidden;
-      /* background-color: #f9f9f9; */
-      transition: transform 0.3s ease;
+      width: 190px;
+      transition: transform 0.3s;
+    }
+
+    .guest:hover {
+      transform: translateY(-10px);
     }
 
     .guest img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 202px;
+      border-bottom: 2px solid black;
     }
 
     .guest p.name {
       padding: 10px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-      /* background-color: #fff; */
+      font-size: 1em;
+      color: white;
+      background-color: rgb(55, 124, 124);
+      border-top: 2px solid #fff;
       margin: 0;
-      border-top: 1px solid #eee;
+      height: 100%;
     }
 
     .guest:hover {
@@ -313,11 +315,11 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
+    <section class="">
             <div class="container ">
               <div class="row">
                 <div class="col-lg-10 col-md-11 mx-auto">
-                  <section style="margin-left: 100px;">
+                  <section style="margin-left: 50px;">
                     <h1 style=" text-align: center;"><strong>Industry-Academia Conclave</strong> </h1>
                     <h5 style=" text-align: center;"><strong>September 28th, 2025</strong> </h5>
                     <div class="chief-guests">
@@ -669,16 +671,7 @@ ISSA (DRDO), New Delhi</p>
   </div>
   </div>
   </div>
-  <div class="carousel_btn-box">
-    <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-      <i class="fa fa-arrow-left" aria-hidden="true"></i>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+ 
   </div>
   </section>
   <!-- end slider section -->
