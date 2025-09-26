@@ -884,6 +884,74 @@
       flex-shrink: 0;
       /* Prevent images from shrinking */
     }
+  .webcast {
+  margin: 120px auto;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  max-width: 900px;
+  text-align: center;
+}
+
+.webcast h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.webcast .sub {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.webcast .event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.webcast .event:hover {
+  transform: translateY(-4px);
+}
+
+.webcast .event-info {
+  text-align: left;
+}
+
+.webcast .event h3 {
+  font-size: 1.8rem;
+  margin: 0 0 6px;
+  color: #111;
+}
+
+.webcast .time {
+  margin: 0;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.webcast .btn {
+  padding: 12px 24px;
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.webcast .btn:hover {
+  background: #b71c1c;
+}
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1024,7 +1092,23 @@
 		  </div>
 		</div> -->
     <!-- Header Close -->
-<div class="chief-guests"  style="margin-top: 200px">
+     <section class="webcast"  style="margin-top: 300px">
+  <h2>Web-cast — 27 September</h2>
+  <p class="sub">Live video streaming links and schedule</p>
+
+  <div class="event">
+    <h3>Inauguration Ceremony</h3>
+    <p class="time">9:30 AM – 1:00 PM</p>
+    <a href="https://youtube.com/live/Dms2sjhAkks" target="_blank" class="btn">Watch Live</a>
+  </div>
+
+  <div class="event">
+    <h3>Cultural Event</h3>
+    <p class="time">6:00 PM – 9:00 PM</p>
+    <a href="https://youtube.com/live/opCC9RcwH5s" target="_blank" class="btn">Watch Live</a>
+  </div>
+</section>
+<div class="chief-guests"  style="margin-top: 100px">
   <!-- 			<h2>CHIEF GUESTS</h2> -->
   <div class="guest-list">
     <div class="guest">
