@@ -884,42 +884,38 @@
       flex-shrink: 0;
       /* Prevent images from shrinking */
     }
-  .webcast {
-  margin: 120px auto;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #f9f9f9, #ffffff);
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  max-width: 900px;
+ .webcast {
+  margin: 80px auto;
+  padding: 40px 20px;
+  max-width: 800px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   text-align: center;
 }
 
 .webcast h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 8px;
   color: #222;
+  font-weight: 600;
 }
 
 .webcast .sub {
-  margin-bottom: 40px;
-  font-size: 1.5rem;
-  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .webcast .event {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 30px;
-  margin: 20px 0;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease;
-}
-
-.webcast .event:hover {
-  transform: translateY(-4px);
+  padding: 16px 20px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
 }
 
 .webcast .event-info {
@@ -927,31 +923,27 @@
 }
 
 .webcast .event h3 {
-  font-size: 1.8rem;
-  margin: 0 0 6px;
+  font-size: 1.3rem;
+  margin: 0 0 4px;
   color: #111;
 }
 
 .webcast .time {
   margin: 0;
-  color: #555;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #444;
 }
 
 .webcast .btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   background: #d32f2f;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: background 0.2s ease;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.webcast .btn:hover {
-  background: #b71c1c;
-}
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1093,36 +1085,23 @@
 		</div> -->
     <!-- Header Close -->
      <section class="webcast"  style="margin-top: 300px">
-       <h2>
-    <strong>
-      INAUGURATION CEREMONY (Live)<br>
-      (27th September, from 9:30 AM to 1:00 PM IST)
-    </strong>
-  </h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/Dms2sjhAkks"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-  <h2>
-    <strong>
-      CULTURAL EVENT (Live)<br>
-      (27th September, from 6:00 PM to 9:00 PM IST)
-    </strong>
-  </h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/opCC9RcwH5s"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+  <div class="event">
+    <div class="event-info">
+      <h3>Inauguration Ceremony</h3>
+      <p class="time">9:30 AM – 1:00 PM</p>
+    </div>
+    <a href="https://youtube.com/live/Dms2sjhAkks" target="_blank" class="btn">Watch Live</a>
+  </div>
+
+  <div class="event">
+    <div class="event-info">
+      <h3>Cultural Event</h3>
+      <p class="time">6:00 PM – 9:00 PM</p>
+    </div>
+    <a href="https://youtube.com/live/opCC9RcwH5s" target="_blank" class="btn">Watch Live</a>
+  </div>
 </section>
-<div class="chief-guests"  style="margin-top: 100px">
+<div class="chief-guests"  >
   <!-- 			<h2>CHIEF GUESTS</h2> -->
   <div class="guest-list">
     <div class="guest">
